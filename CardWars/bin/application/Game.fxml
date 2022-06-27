@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.GameController">
+   <children>
+      <ImageView fitHeight="720.0" fitWidth="1280.0" layoutX="-1.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="file:/C:/Users/HAMZA/Desktop/CardWars/src/application/CardWars%20Images/bg2.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="nameLabel" layoutX="8.0" layoutY="497.0" prefHeight="30.0" prefWidth="231.0" text="Player2:">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="171.0" fitWidth="150.0" layoutX="20.0" layoutY="-1.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="file:/C:/Users/HAMZA/Desktop/CardWars/src/application/CardWars%20Images/computer-lab-icon-2.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="8.0" layoutY="569.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="file:/C:/Users/HAMZA/Desktop/CardWars/src/application/CardWars%20Images/84e832cc-b853-40d1-bcf9-bd0d2aae2bec.sized-1000x1000.jpg" />
+         </image>
+      </ImageView>
+      <Label fx:id="nameLabel2" layoutX="14.0" layoutY="156.0" prefHeight="30.0" prefWidth="244.0" text="Player1: ">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="player1HealthLabel" layoutX="6.0" layoutY="527.0" prefHeight="30.0" prefWidth="119.0" text="Health: ">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="player2HealthLabel" layoutX="14.0" layoutY="193.0" prefHeight="30.0" prefWidth="159.0" text="Health: ">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="card1View" fitHeight="150.0" fitWidth="119.0" layoutX="348.0" layoutY="549.0" onMouseClicked="#mouseClicked" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="card4View" fitHeight="150.0" fitWidth="119.0" layoutX="774.0" layoutY="549.0" onMouseClicked="#mouseClicked4" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="card3View" fitHeight="150.0" fitWidth="119.0" layoutX="619.0" layoutY="549.0" onMouseClicked="#mouseClicked3" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="card2View" fitHeight="150.0" fitWidth="119.0" layoutX="484.0" layoutY="549.0" onMouseClicked="#mouseClicked2" pickOnBounds="true" preserveRatio="true" />
+      <Button fx:id="board1" layoutX="367.0" layoutY="360.0" mnemonicParsing="false" onAction="#attackToPlayer2Board1" prefHeight="181.0" prefWidth="126.0" />
+      <Button fx:id="board4" layoutX="745.0" layoutY="360.0" mnemonicParsing="false" onAction="#attackToPlayer2Board4" prefHeight="181.0" prefWidth="126.0" />
+      <Button fx:id="board3" layoutX="619.0" layoutY="360.0" mnemonicParsing="false" onAction="#attackToPlayer2Board3" prefHeight="181.0" prefWidth="126.0" />
+      <Button fx:id="board2" layoutX="493.0" layoutY="360.0" mnemonicParsing="false" onAction="#attackToPlayer2Board2" prefHeight="181.0" prefWidth="126.0" />
+      <Button fx:id="board14" layoutX="745.0" layoutY="179.0" mnemonicParsing="false" onAction="#attackToPlayer1Board14" prefHeight="181.0" prefWidth="126.0" />
+      <Button fx:id="board13" layoutX="619.0" layoutY="179.0" mnemonicParsing="false" onAction="#attackToPlayer1Board13" prefHeight="181.0" prefWidth="126.0" />
+      <Button fx:id="board12" layoutX="493.0" layoutY="179.0" mnemonicParsing="false" onAction="#attackToPlayer1Board12" prefHeight="181.0" prefWidth="126.0" />
+      <Button fx:id="board11" layoutX="367.0" layoutY="179.0" mnemonicParsing="false" onAction="#attackToPlayer1Board11" prefHeight="181.0" prefWidth="126.0" />
+      <ImageView fx:id="card12View" fitHeight="150.0" fitWidth="119.0" layoutX="484.0" layoutY="14.0" onMouseClicked="#mouseClicked12" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="card13View" fitHeight="150.0" fitWidth="119.0" layoutX="619.0" layoutY="14.0" onMouseClicked="#mouseClicked13" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="card14View" fitHeight="150.0" fitWidth="119.0" layoutX="775.0" layoutY="14.0" onMouseClicked="#mouseClicked14" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="card11View" fitHeight="150.0" fitWidth="100.0" layoutX="356.0" layoutY="14.0" onMouseClicked="#mouseClicked11" pickOnBounds="true" preserveRatio="true" />
+      <Label fx:id="roundLabel" layoutX="14.0" layoutY="330.0" prefHeight="30.0" prefWidth="135.0" text="Round: ">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="deckView" fitHeight="213.0" fitWidth="143.0" layoutX="937.0" layoutY="254.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@cardBack.jpg" />
+         </image>
+      </ImageView>
+      <Label fx:id="deckLabel" layoutX="937.0" layoutY="206.0" prefHeight="35.0" prefWidth="163.0" text="Card Amount: " textFill="#fffefe">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Button fx:id="endTurnButton" layoutX="1124.0" layoutY="338.0" mnemonicParsing="false" onAction="#endTurn" text="End Turn">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+      <ImageView fx:id="board1View" fitHeight="129.0" fitWidth="82.0" layoutX="391.0" layoutY="389.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="drawedCard" fitHeight="150.0" fitWidth="119.0" layoutX="1109.0" layoutY="422.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="board2View" fitHeight="129.0" fitWidth="82.0" layoutX="515.0" layoutY="387.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="board3View" fitHeight="129.0" fitWidth="82.0" layoutX="637.0" layoutY="387.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="board4View" fitHeight="129.0" fitWidth="82.0" layoutX="763.0" layoutY="387.0" pickOnBounds="true" preserveRatio="true" />
+      <Button fx:id="StartButton" layoutX="54.0" layoutY="404.0" mnemonicParsing="false" onAction="#startTheGame" text="Start">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+      <ImageView fx:id="board11View" fitHeight="129.0" fitWidth="82.0" layoutX="391.0" layoutY="208.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="board14View" fitHeight="129.0" fitWidth="82.0" layoutX="767.0" layoutY="208.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="board13View" fitHeight="129.0" fitWidth="82.0" layoutX="641.0" layoutY="208.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="board12View" fitHeight="129.0" fitWidth="82.0" layoutX="518.0" layoutY="208.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="hiddenView4" fitHeight="150.0" fitWidth="119.0" layoutX="240.0" layoutY="31.0" onMouseClicked="#hiddenClick" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="hiddenView3" fitHeight="150.0" fitWidth="119.0" layoutX="229.0" layoutY="563.0" onMouseClicked="#hiddenClick" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="hiddenView2" fitHeight="150.0" fitWidth="119.0" layoutX="240.0" layoutY="211.0" onMouseClicked="#hiddenClick" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="hiddenView1" fitHeight="150.0" fitWidth="119.0" layoutX="229.0" layoutY="360.0" onMouseClicked="#hiddenClick" pickOnBounds="true" preserveRatio="true" />
+   </children>
+</AnchorPane>
